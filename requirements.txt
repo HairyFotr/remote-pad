@@ -3,3 +3,4 @@ evdev
 pygame
 python-dateutil
 ruff
+pywinusb
