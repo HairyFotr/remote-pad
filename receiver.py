@@ -17,10 +17,10 @@ events = [
     uinput.BTN_TR,    # RB
     uinput.BTN_THUMBL,
     uinput.BTN_THUMBR,
-    uinput.ABS_X + (0, 255, 0, 0),
-    uinput.ABS_Y + (0, 255, 0, 0),
-    uinput.ABS_RX + (0, 255, 0, 0),
-    uinput.ABS_RY + (0, 255, 0, 0),
+    uinput.ABS_X + (-32768, 32767, 0, 0),
+    uinput.ABS_Y + (-32768, 32767, 0, 0),
+    uinput.ABS_RX + (-32768, 32767, 0, 0),
+    uinput.ABS_RY + (-32768, 32767, 0, 0),
     uinput.ABS_HAT0X + (-1, 1, 0, 0),  # D-Pad X
     uinput.ABS_HAT0Y + (-1, 1, 0, 0),  # D-Pad Y
 ]
