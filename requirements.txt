@@ -1,0 +1,5 @@
+python-uinput
+evdev
+pygame
+python-dateutil
+ruff
