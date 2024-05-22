@@ -15,6 +15,9 @@ python -m venv env
 . env/bin/activate
 python -m pip install -r requirements.txt
 
+cp config.py.example config.py
+The default config is for a local setup, change UDP_IP if remote
+
 
 Receiver should open port 8888/udp on firewall and/or router
 
