@@ -18,10 +18,16 @@ key_mapping = {
     'a': (ecodes.EV_KEY, 16, -1),  # D-Pad left press
     's': (ecodes.EV_KEY, 17, -1),  # D-Pad down press
     'd': (ecodes.EV_KEY, 16, -1),  # D-Pad right press
-    'up': (ecodes.EV_KEY, 17, -1),  # D-Pad up press
-    'left': (ecodes.EV_KEY, 16, -1),  # D-Pad left press
-    'down': (ecodes.EV_KEY, 17, -1),  # D-Pad down press
-    'right': (ecodes.EV_KEY, 16, -1),  # D-Pad right press
+    # 'up': (ecodes.EV_KEY, 17, -1),  # D-Pad up press
+    # 'left': (ecodes.EV_KEY, 16, -1),  # D-Pad left press
+    # 'down': (ecodes.EV_KEY, 17, -1),  # D-Pad down press
+    # 'right': (ecodes.EV_KEY, 16, -1),  # D-Pad right press
+    # 'space': (ecodes.EV_KEY, 315, 1),  # Start button press
+    # 'enter': (ecodes.EV_KEY, 315, 1)   # Start button press
+    'up': (ecodes.EV_KEY, 1, config.JOY_MIN),  # Joystick up press
+    'left': (ecodes.EV_KEY, 0, config.JOY_MIN),  # Joystick left press
+    'down': (ecodes.EV_KEY, 1, config.JOY_MAX),  # Joystick down press
+    'right': (ecodes.EV_KEY, 0, config.JOY_MAX),  # Joystick right press
     'space': (ecodes.EV_KEY, 315, 1),  # Start button press
     'enter': (ecodes.EV_KEY, 315, 1)   # Start button press
 }
