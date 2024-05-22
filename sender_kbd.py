@@ -57,7 +57,7 @@ def on_release(key):
     if key_char in key_mapping:
         event = key_mapping[key_char]
         # Send key release event
-        sock.sendto(struct.pack(config.STRUCT_FORMAT, event[0], event[1], 0), UDP_ADDR)
+        sock.sendto(struct.pack(config.STRUCT_FORMAT, event[0], event[1], config.JOY_ZERO if event[0] == ecodes.EV_ABS else 0), UDP_ADDR)
         if config.PRINT:
             print(event[0], event[1], 0)
 
